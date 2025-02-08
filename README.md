@@ -105,3 +105,37 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>attempt to log into Client-1 with one of the accounts (take note of the password in the script)</p>
 
 
+<h3>Dealing with Account Lockouts</h3>
+
+------------------------------------
+
+<p>Get logged into dc-1</p>
+<p>Pick a random user account you created previously</p>
+<p>Attempt to log in with it 10 times with a bad password</p>
+
+<p>Configure Group Policy to Lockout the account after 5 attempts:</p>
+
+
+
+<p>Attempt to log in with it 6 times with a bad password</p>
+
+<p>Observe that the account has been locked out within Active Directory</p>
+<p>Unlock the account</p>
+<p>Reset the password</p>
+<p>Attempt to login with it</p>
+
+<h3>Enabling and Disabling Accounts</h3>
+
+------------------------------------
+
+<p>Disable the same account in Active Directory</p>
+<p>Attempt to login with it, observe the error message</p>
+<p>Re-enable the account and attempt to login with it.</p>
+
+<h3>Observing Logs</h3>
+
+------------------------------------
+
+<p>Observe the logs in the Domain Controller</p>
+<p>Observe the logs on the client Machine</p>
+
